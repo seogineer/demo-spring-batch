@@ -20,3 +20,14 @@ spring:
   h2:
     console:
       enabled: true
+---
+spring:
+  config:
+    activate:
+      on-profile: mysql
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:13306/spring_batch
+      username: root
+      password: masterpw
+      driver-class-name: com.mysql.cj.jdbc.Driver
